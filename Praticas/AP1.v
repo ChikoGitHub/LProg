@@ -289,16 +289,23 @@ Example test_bin_incr5:
   bin_to_nat (incr (A(A(B Z)))) = bin_to_nat Z + 5.
 Proof. simpl. reflexivity. Qed.
 
-(* Duvida - Nao funciona)
+(* Duvida - Nao funciona) 
 Require Import omega.Omega.
 Require Import NAxioms NProperties OrdersFacts.
-Include Coq.Init.Nat.
+Require Import Coq.Init.Nat.
+
+Check Nat.add_0_r.
+Check Nat.add_1_r.
+
+Require Import Coq.Arith.Arith.
 
 Theorem inc_correct: forall m,
   bin_to_nat (incr m) = bin_to_nat m +1.
 Proof. 
   intros. induction m.
   - simpl. reflexivity.
-  - simpl. rewrite Nat.add_1_r. rewrite Nat.add_0_r. reflexivity.
-  - simpl. rewrite IHm. omega.
-Qed. *)
+  - simpl. rewrite Nat.add_1_r. reflexivity.
+  - simpl. rewrite IHm. rewrite plus_n_Sm. rewrite plus_assoc. omega.
+Qed. 
+
+*)
