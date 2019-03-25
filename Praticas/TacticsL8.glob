@@ -1,0 +1,43 @@
+DIGEST 029374051af93afbe39bd85835c3c4e0
+FTacticsL8
+R94:98 Coq.Logic.Eqdep <> <> lib
+R100:105 Coq.Strings.String <> <> lib
+R107:111 Coq.Arith.Arith <> <> lib
+R113:117 Coq.omega.Omega <> <> lib
+R119:125 Coq.Program.Program <> <> lib
+R164:167 Coq.Lists.List <> <> lib
+R282:282 Coq.Init.Logic <> I constr
+R356:359 Coq.Init.Logic <> True ind
+R356:359 Coq.Init.Logic <> True ind
+R620:622 Coq.Init.Peano <> max syndef
+R620:622 Coq.Init.Peano <> max syndef
+R797:799 Coq.Init.Peano <> max syndef
+R797:799 Coq.Init.Peano <> max syndef
+R978:980 Coq.Init.Peano <> min syndef
+R978:980 Coq.Init.Peano <> min syndef
+R1155:1157 Coq.Init.Peano <> min syndef
+R1155:1157 Coq.Init.Peano <> min syndef
+R1225:1236 Coq.Arith.Min <> min_spec def
+R1043:1054 Coq.Arith.Min <> min_spec def
+R867:878 Coq.Arith.Max <> max_spec def
+R685:696 Coq.Arith.Max <> max_spec def
+R1451:1451 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1453:1457 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1459:1459 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1451:1451 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1453:1457 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1459:1459 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1588:1590 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1591:1594 Coq.Init.Specif <> left constr
+R1588:1590 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1591:1594 Coq.Init.Specif <> left constr
+R1634:1636 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1637:1641 Coq.Init.Specif <> right constr
+R1634:1636 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1637:1641 Coq.Init.Specif <> right constr
+R1692:1694 Coq.Init.Nat <> max def
+R1696:1698 Coq.Init.Nat <> min def
+R1717:1726 Coq.Arith.Peano_dec <> eq_nat_dec syndef
+not 1708:1708 <> :::x_'==n'_x
+R1776:1784 Coq.Arith.Compare_dec <> le_lt_dec def
+not 1767:1767 <> :::x_'<=?'_x
