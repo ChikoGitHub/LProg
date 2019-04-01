@@ -70,6 +70,30 @@ Fixpoint mapBTree (f : X -> Y) (tree: btree X) : btree Y :=
   | Node Value ltree rtree => Node (f Value) (mapBTree f ltree) (mapBTree f rtree)
 end.
 
+Fixpoint foldBTree (f : X -> Y -> Y -> Y) (y :Y) (tree : btree X) : Y :=
+  match tree with
+  | Empty => y
+  | Node Value ltree rtree => f Value (foldBTree f y ltree) ( foldBTree f y rtree)
+end.
+
+End Btrees.
+
+Definition nodes' {X : Type} (tree : btree X) : nat :=
+  foldBTree (fun e l r => 1 + l + r) 0 tree.
+
+Definition height' {X : Type} (tree : btree X) : nat :=
+  foldBTree (fun e l r => 1 + (max l r)) 0 tree.
+
+Definition flatten' {X : Type} (tree : btree X) : list X :=
+  foldBTree (fun e l r => e :: ( l ++ r)) [] tree.
+
+Definition maxTree' (tree : btree nat) : nat :=
+  foldBTree (fun e l r => max e (max l r)) 0 tree.
+
+Definition mapBTree' {X Y: Type} (f : X -> Y) (tree: btree X) : btree Y :=
+  foldBTree (fun e l r => Node (f e) l r) Empty tree.
+
+
 
 
 
